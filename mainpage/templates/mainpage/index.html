@@ -1,0 +1,77 @@
+{% extends 'mainpage/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Seção Hero App -->
+<section class="hero-app-section">
+    <div class="container hero-app-container">
+        <div class="hero-app-text">
+            <h1>Baixe o novo app Hemolab</h1>
+            <p>Acesse os resultados dos exames, encontre a unidade mais próxima e muito mais.</p>
+            <a href="#" class="btn btn-dark">Acesse agora</a>
+            <div class="app-store-buttons">
+                <a href="#"><img src="https://hemolabrn.com/wp-content/uploads/2022/07/google-play-1.svg" alt="Google Play"></a>
+                <a href="#"><img src="https://hemolabrn.com/wp-content/uploads/2022/07/app-store-1.svg" alt="App Store"></a>
+            </div>
+        </div>
+        <div class="hero-app-image">
+            <img src="https://hemolabrn.com/wp-content/uploads/2022/07/celular-hemolab-1-1.png" alt="Celular com o app Hemolab">
+        </div>
+    </div>
+</section>
+
+<!-- Seção Sobre -->
+<section class="about-section">
+    <div class="container about-container">
+        <div class="about-text">
+            <h2>O Hemolab.</h2>
+            <p>Sempre pautado em princípios éticos e composto por uma equipe de profissionais capacitados, investe na excelência de métodos e no padrão de qualidade de seus exames, através de programas de educação continuada e do emprego de tecnologia de automação de última geração.</p>
+            <p>Estes requisitos, aliados ao espírito de bem servir à nossa clientela, nos confere o lugar de destaque no cenário da análise clínica do estado do Rio Grande do Norte.</p>
+            <a href="#" class="btn btn-secondary">Saiba mais</a>
+        </div>
+        <div class="about-video">
+            <img src="https://i.ytimg.com/vi/j3ssA4_43P0/hqdefault.jpg" alt="Video sobre o Hemolab">
+            <!-- Idealmente, isso seria um player de vídeo real -->
+        </div>
+    </div>
+</section>
+
+<!-- Seção Nossas Unidades (Página Inicial) -->
+<section class="units-home-section">
+    <div class="container">
+        <h2>Nossas unidades</h2>
+        <p>Tem sempre um Hemolab perto de você!</p>
+        <div class="units-grid">
+            <!-- Card Itapetinga -->
+            <div class="unit-card">
+                <div class="unit-card-content">
+                    <h3>Hemolab - Itapetinga</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Itapetinga, 920 - Potengi</p>
+                    <p><i class="fas fa-phone-alt"></i> (84) 3616-5000</p>
+                    <p><i class="far fa-clock"></i> Segunda à Sexta das 6:00h às 13:00h. Sábado das 6:30h às 10:30h.</p>
+                </div>
+            </div>
+            <!-- Card Potengi -->
+            <div class="unit-card">
+                <div class="unit-card-content">
+                    <h3>Hemolab - Potengi</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> R. Jundiaí, 278 - Potengi</p>
+                    <p><i class="fas fa-phone-alt"></i> (84) 3616-5000</p>
+                    <p><i class="far fa-clock"></i> Segunda à Sexta das 6:00h às 16:00h. Sábado das 6:30h às 11:30h.</p>
+                </div>
+            </div>
+            <!-- Card São Gonçalo -->
+            <div class="unit-card">
+                <div class="unit-card-content">
+                    <h3>Hemolab - São Gonçalo do Amarante</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Centro Médico Coração de Jesus - Av. Tomaz Landim, 102 - São Gonçalo do Amarante</p>
+                    <p><i class="fas fa-phone-alt"></i> (84) 3616-5000</p>
+                    <p><i class="far fa-clock"></i> Segunda à Sexta das 6:00h às 12:00h. Sábado das 6:30h às 10:30h.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
