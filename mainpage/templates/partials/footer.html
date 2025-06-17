@@ -1,9 +1,37 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/footer.css' %}">
 <!-- Rodapé -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Hemolab RN. Todos os direitos reservados.</p>
-            <p>Desenvolvido para fins educacionais.</p>
+    <footer class="site-footer">
+
+        <div class="footer-top">
+            <div class="footer-content">
+                <img src="{% static 'images/logo-footer.png' %}" alt="Logo Hemolab Branco" class="footer-logo">
+                
+                <p class="footer-text">
+                    O Hemolab, dispõe de serviços de diagnose nas mais diversas áreas como biologia molecular, hematologia, imuno-hematologia, citometria de fluxo, bioquímica, imunologia, hormônios, urinálises, parasitologia, microbiologia, micologia, análises clínicas com recursos e equipamentos de ponta.
+                </p>
+                
+                <div class="footer-social-dots">
+                    <a href="https://instagram.com/hemolab" target="_blank" aria-label="Link para o Instagram">
+                        <span class="dot active"></span>
+                    </a>
+                    <a href="https://facebook.com/hemolab" target="_blank" aria-label="Link para o Facebook">
+                        <span class="dot"></span>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Link para outra rede social">
+                        <span class="dot"></span>
+                    </a>
+                </div>
+            </div>
         </div>
+
+        <div class="footer-bottom">
+            <div class="copyright-text">
+                © 2025 Hemolab, Todos os direitos reservados. Desenvolvido por <a href="https://lartsdesign.com.br" target="_blank">lartsdesign.com.br</a>
+            </div>
+            <div class="privacy-links">
+                <a href="/politicas-de-privacidade">Políticas de Privacidade</a>
+            </div>
+        </div>
+
     </footer>

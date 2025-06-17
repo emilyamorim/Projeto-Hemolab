@@ -1,8 +1,110 @@
-/* Rodapé */
-.footer {
-    background-color: #343a40; /* Cinza escuro */
-    color: white;
+/* --- Variáveis de Cores para fácil manutenção --- */
+:root {
+    --cor-principal: #00938a;
+    --cor-principal-hover: #00625a;
+    --cor-texto-footer: #6c757d;
+    --cor-borda: #e9ecef;
+}
+
+/* Configurações globais */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Parte Superior do Rodapé (Verde) --- */
+.footer-top {
+    background-color: var(--cor-principal);
+    color: #fff;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 30px;
+}
+
+.footer-content {
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.footer-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+/* --- Estilos para os links em formato de bolinha --- */
+.footer-social-dots {
+    display: flex;
+    gap: 20px; /* Espaço entre as bolinhas */
+}
+
+.footer-social-dots a {
+    display: block; /* Garante que o link possa ter dimensões */
+    text-decoration: none;
+    transition: transform 0.3s ease; /* Efeito de transição suave */
+}
+
+.footer-social-dots a:hover {
+    transform: scale(1.15); /* Aumenta levemente a bolinha ao passar o mouse */
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    border-radius: 50%; /* Círculo perfeito */
+    display: block; /* Garante que o span se comporte como um bloco */
+}
+
+.dot.active {
+    /* Pode ter um estilo diferente, mas na imagem são iguais */
+    background-color: #fff; 
+}
+
+
+/* --- Parte Inferior do Rodapé (Branca) - Layout Responsivo --- */
+.footer-bottom {
+    background-color: #fff;
+    padding: 40px 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 15px 30px; 
+    border-top: 1px solid var(--cor-borda);
+    font-size: 14px;
+    color: var(--cor-texto-footer);
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: var(--cor-principal);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: var(--cor-principal-hover);
+}
+
+/* Media Query para telas pequenas (celulares) */
+@media (max-width: 768px) {
+    .footer-bottom {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
 }

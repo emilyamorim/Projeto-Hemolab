@@ -1,27 +1,28 @@
 {% load static %}
-<link rel="stylesheet" href="{% static 'css/header.css' %}">
+<head>
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+</head>
   <!-- Cabeçalho Superior -->
-    <header class="top-bar">
-        <div class="container">
-            <span><i class="fas fa-map-marker-alt"></i> Av. Afonso Pena, 497, Natal/RN</span>
-            <span><i class="fas fa-phone-alt"></i> (84) 4008-5100</span>
-            <span><i class="fas fa-envelope"></i> contato@hemolabrn.com</span>
+    <header class="navbar">
+        <div class="logo">
+            <img src="{% static 'images/logo-header.png' %}">
+        </div>
+
+        <div class="separador"></div>
+
+        <nav class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#certificados">Certificados</a>
+            <a href="#unidades">Unidades</a>
+            <a href="#quem-somos">Quem Somos</a>
+        </nav>
+        <div class="contato-telefones">
+            <span>(84) 3616-5000</span>
+            <span>(84) 3616-5000</span>
+        </div>
+        <div class="botoes-acao">
+            <a href="#resultados" class="btn btn-resultados">Resultados</a>
+            <a href="#compre-online" class="btn btn-compre-online">Compre Online</a>
         </div>
     </header>
-
-    <!-- Menu de Navegação Principal -->
-    <nav class="main-nav">
-        <div class="container">
-            <a href="{% url 'index' %}" class="logo">
-                <!-- Você pode colocar a imagem do logo aqui -->
-                <img src="https://placehold.co/200x50/ffffff/0056b3?text=HEMOLAB" alt="Logo Hemolab">
-            </a>
-            <ul>
-                <li><a href="{% url 'index' %}">Início</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Exames</a></li>
-                <li><a href="#">Convênios</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </div>
-    </nav>

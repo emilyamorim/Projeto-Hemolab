@@ -1,160 +1,140 @@
-/* ==========================================================================
-   Configurações Globais e Variáveis de Cor (Baseado no Design)
-   ========================================================================== */
-:root {
-    --primary-color: #00a9e0; /* Azul claro (botões principais) */
-    --secondary-color: #0056b3; /* Azul escuro (usado em links) */
-    --dark-color: #333;
-    --light-color: #fff;
-    --background-color: #f8f9fa;
-    --text-color: #555;
-    --section-bg-color: #0f96c4; /* Azul para a seção de unidades */
+/* --- Estilos Gerais da Seção do Carrossel --- */
+.hero-carousel {
+    position: relative;
+    width: 100%;
+    background-color: #f0f2f5; /* Cor de fundo cinza claro */
+    /* Para os gráficos de fundo, o ideal é usar uma imagem */
+    background-image: url('static/images/logo-2.png');
+    background-size: cover;
+    background-position: center;
 }
 
-body {
-    font-family: 'Poppins', sans-serif; /* Fonte mais moderna */
-    margin: 0;
-    padding: 0;
-    background-color: var(--light-color);
-    color: var(--text-color);
-    overflow-x: hidden; /* Evita scroll horizontal */
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
+.swiper {
+    width: 100%;
+    max-width: 1300px; /* Largura máxima do conteúdo do carrossel */
     margin: 0 auto;
-}
-
-/* ==========================================================================
-   Seção Hero App
-   ========================================================================== */
-.hero-app-section {
-    background-color: var(--background-color);
     padding: 60px 0;
 }
-.hero-app-container {
+
+.swiper-slide {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-}
-.hero-app-text {
-    flex: 1;
-}
-.hero-app-text h1 {
-    font-size: 3em;
-    color: var(--secondary-color);
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
-.hero-app-text p {
-    font-size: 1.1em;
-    margin-bottom: 30px;
-}
-.app-store-buttons {
-    margin-top: 20px;
-    display: flex;
-    gap: 15px;
-}
-.app-store-buttons img {
-    height: 40px;
+    justify-content: center;
 }
 
-.hero-app-image {
+.slide-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 90%;
+}
+
+/* --- Estilos do Conteúdo (Textos e Imagens) --- */
+.slide-text {
     flex: 1;
+    color: #0d2c4e; /* Azul escuro do texto */
+}
+
+.slide-text h2 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+}
+
+.slide-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 450px; /* Limita a largura do parágrafo */
+    margin-bottom: 30px;
+}
+
+.btn-acessar {
+    display: inline-block;
+    background-color: #00a99d; /* Verde-água */
+    color: #fff;
+    padding: 14px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-acessar:hover {
+    background-color: #007d74; /* Tom mais escuro */
+}
+
+.slide-image {
+    flex: 1.2; /* Dá um pouco mais de espaço para a imagem */
     text-align: center;
 }
-.hero-app-image img {
-    max-width: 80%;
+
+.slide-image img {
+    max-width: 100%;
     height: auto;
 }
 
-/* ==========================================================================
-   Seção Sobre
-   ========================================================================== */
-.about-section {
-    padding: 80px 0;
-}
-.about-container {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-.about-text {
-    flex-basis: 50%;
-}
-.about-text h2 {
-    font-size: 2.5em;
-    color: var(--secondary-color);
-    margin-bottom: 20px;
-}
-.about-text p {
-    line-height: 1.7;
-    margin-bottom: 20px;
-}
-.about-video {
-    flex-basis: 50%;
-}
-.about-video img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+/* --- Estilos Específicos de Cada Slide --- */
+.accredited-badge {
+    position: absolute;
+    top: 20px;
+    right: 4%;
+    width: 150px; /* Ajuste o tamanho do selo */
 }
 
-/* ==========================================================================
-   Seção Unidades (Página Inicial)
-   ========================================================================== */
-.units-home-section {
-    background-color: var(--section-bg-color);
-    padding: 80px 0;
-    color: var(--light-color);
-    text-align: center;
-}
-.units-home-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-.units-home-section p {
-    margin-bottom: 40px;
-}
-/* Reutilizando os estilos da página de unidades */
-.units-grid {
+.app-buttons {
+    margin-top: 25px;
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    gap: 15px;
 }
-.unit-card {
-    background-color: #fff;
-    color: var(--text-color); /* Texto escuro no card branco */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 350px;
-    text-align: left;
-    overflow: hidden;
-    transition: transform 0.3s ease;
+
+.app-buttons img {
+    height: 45px;
+    width: auto;
 }
-.unit-card:hover {
-    transform: translateY(-10px);
+
+/* Para o primeiro slide, que tem a estrada */
+.slide-coleta {
+    background-image: url('placeholder-estrada.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% auto;
 }
-.unit-card-content {
-    padding: 25px;
+
+
+/* --- Estilos das Setas de Navegação --- */
+.swiper-button-prev,
+.swiper-button-next {
+    color: #0d2c4e; /* Cor das setas */
+    width: 50px;
+    height: 50px;
 }
-.unit-card-content h3 {
-    font-size: 1.4em;
-    color: var(--secondary-color);
-    margin-top: 0;
-    margin-bottom: 20px;
+
+/* Remove o fundo padrão do Swiper */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 24px; /* Tamanho do ícone da seta */
+    font-weight: 900;
 }
-.unit-card-content p {
-    margin-bottom: 10px;
-    line-height: 1.5;
-    color: var(--text-color);
-    font-size: 0.9em;
-}
-.unit-card-content i {
-    margin-right: 10px;
-    color: var(--primary-color);
-    width: 20px;
+
+/* --- Layout Responsivo para Celulares --- */
+@media (max-width: 768px) {
+    .slide-content {
+        flex-direction: column; /* Empilha o texto sobre a imagem */
+        text-align: center;
+    }
+
+    .slide-text h2 {
+        font-size: 36px;
+    }
+
+    .slide-text p {
+        max-width: 100%;
+    }
+
+    .accredited-badge {
+        position: static; /* Remove o posicionamento absoluto */
+        margin-bottom: 20px;
+        width: 120px;
+    }
 }
