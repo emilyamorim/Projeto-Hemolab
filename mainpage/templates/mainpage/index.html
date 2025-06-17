@@ -2,44 +2,256 @@
 {% load static %}
 
 {% block content %}
-<section class="hero-carousel">
-    <div class="swiper">
-        <div class="swiper-wrapper">
+<div class="carousel-container">
+    <div class="carousel-slide slide1 active">
+        <div class="carousel-text">
+            <h2>Coleta domiciliar e empresarial</h2>
+            <p>Exames laboratoriais onde você estiver, realizado por profissionais especializados em coletas adultas e
+                infantis com toda a qualidade que você já conhece.</p>
+            <a href="#" class="btn">Acessar agora</a>
+        </div>
+    </div>
 
-            <div class="swiper-slide slide-coleta">
-                <div class="slide-content">
-                    <div class="slide-text">
-                        <img src="placeholder-acreditado.png" alt="Selo Laboratório Acreditado" class="accredited-badge">
-                        <h2>Coleta<br>domiciliar e<br>empresarial</h2>
-                        <p>Exames laboratoriais onde você estiver, realizado por profissionais especializados em coletas adultas e infantis com toda a qualidade que você já conhece.</p>
-                        <a href="#" class="btn-acessar">Acessar agora</a>
-                    </div>
-                    <div class="slide-image">
-                        <img src="placeholder-carro.png" alt="Carro da Coleta Domiciliar Hemolab">
-                    </div>
-                </div>
-            </div>
+    <div class="carousel-slide slide2">
+        <div class="carousel-text">
+            <h2>Baixe o novo app Hemolab</h2>
+            <p>Acesso os resultados dos exames, encontre a unidade mais próxima e muito mais.</p>
+            <a href="#" class="btn">Acessar agora</a>
+        </div>
+    </div>
 
-            <div class="swiper-slide slide-app">
-                <div class="slide-content">
-                    <div class="slide-text">
-                        <h2>Baixe o novo<br>app Hemolab</h2>
-                        <p>Acessos os resultados dos exames, encontre a unidade mais próxima e muito mais.</p>
-                        <a href="#" class="btn-acessar">Acessar agora</a>
-                        <div class="app-buttons">
-                            <a href="#"><img src="placeholder-google-play.png" alt="Get it on Google Play"></a>
-                            <a href="#"><img src="placeholder-app-store.png" alt="Download on the App Store"></a>
-                        </div>
-                    </div>
-                    <div class="slide-image">
-                        <img src="placeholder-celular.png" alt="Aplicativo Hemolab em um celular">
-                    </div>
-                </div>
-            </div>
+    <button class="nav prev">&#10094;</button>
+    <button class="nav next">&#10095;</button>
+</div>
 
-        </div> <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-    </div> 
+<section class="secao-hemolab">
+    <div class="container">
+        <div class="conteudo-texto">
+            <h2>O Hemolab.</h2>
+            <p>Sempre pautado em princípios éticos e composto por uma equipe de profissionais capacitados, investe na
+                excelência de métodos através da participação de programa de qualidade nacional, de educação continuada
+                e do emprego de tecnologia de automação nos seus processos analíticos.</p>
+            <p>Estes requisitos, aliado ao espírito de bem servir à nossa clientela, nos confere o lugar de destaque no
+                cenário da análise clínica do estado do Rio Grande do Norte.</p>
+            <a href="#" class="botao-chamada-acao">Saiba mais</a>
+        </div>
+        <div class="conteudo-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZALhLc3D-4w?si=SN_3TPCnZpksRctt"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
 </section>
+
+<section class="secao-unidades">
+    <div class="container">
+        <div class="cabecalho-secao">
+            <div class="titulo-wrapper">
+                <h2>Nossas unidades</h2>
+                <p>Tem sempre um Hemolab perto de você!</p>
+                <p>OBS: Coletas são realizadas em todas as unidades.</p>
+            </div>
+            <div class="navegacao-carrossel">
+                <button id="seta-anterior" class="seta-nav">&#60;</button>
+                <button id="seta-proxima" class="seta-nav">&#62;</button>
+            </div>
+        </div>
+
+        <div class="carrossel-wrapper">
+            <div class="carrossel-track" id="carrossel-track">
+
+                <div class="card-unidade">
+                    <img src="" alt="">
+                    <div class="card-info">
+                        <h3>Hemolab - Petrópolis</h3>
+                        <ul>
+                            <li>Av. Deodoro da Fonseca, 284 - Petrópolis, Natal - RN</li>
+                            <li>(84) 3616-5000</li>
+                            <li>Segunda à Sexta das 6:00h ás 17:00 Sábado das 6:30h às 13:00h</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-unidade">
+                    <img src="" alt="">
+                    <div class="card-info">
+                        <h3>Hemolab - Nascimento de Castro</h3>
+                        <ul>
+                            <li>Av. Nascimento de Castro, 1909 - Lagoa Nova</li>
+                            <li>(84) 3616-5000</li>
+                            <li>Segunda à Sexta das 6:00h ás 16:00 Sábado das 6:30h às 12:00h</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-unidade">
+                    <img src="" alt="">
+                    <div class="card-info">
+                        <h3>Hemolab - Miguel Castro</h3>
+                        <ul>
+                            <li>Av. Miguel Castro, 1137 - Lagoa Nova</li>
+                            <li>(84) 3616-5000</li>
+                            <li>Segunda à Sexta das 6:00h ás 12:00 Sábado das 6:30h às 10:30h</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-unidade">
+                    <img src="" alt="">
+                    <div class="card-info">
+                        <h3>Hemolab - Campim Macio</h3>
+                        <ul>
+                            <li>Av. Engenheiro Roberto Freire, 915 - Capim Macio, Natal - RN</li>
+                            <li>(84) 3616-5000</li>
+                            <li>Segunda à Sexta das 6:00h ás 16:00 Sábado das 6:30h às 12:00h</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-unidade">
+                    <img src="" alt="">
+                    <div class="card-info">
+                        <h3>Hemolab - Coophab</h3>
+                        <ul>
+                            <li>Av. Olavo Lacerda Montenegro, 3345 - Parque das Nações, Paranamirim - RN</li>
+                            <li>(84) 3616-5000</li>
+                            <li>Segunda à Sexta das 6:00h ás 12:00 Sábado das 6:30h às 10:30h</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-unidade">
+                    <img src="" alt="">
+                    <div class="card-info">
+                        <h3>Hemolab - Cidade da Esperança</h3>
+                        <ul>
+                            <li>Av. Paraíba, 120 - Cidade da Esperança, Natal - RN</li>
+                            <li>(84) 3616-5000</li>
+                            <li>Segunda à Sexta das 6:00h ás 12:00 Sábado das 6:30h às 10:30h</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-unidade">
+                    <img src="" alt="">
+                    <div class="card-info">
+                        <h3>Hemolab - Itapetinga</h3>
+                        <ul>
+                            <li>Avenida Itapetinga, 920 - Potengi</li>
+                            <li>(84) 3616-5000</li>
+                            <li>Segunda à Sexta das 6:00h ás 12:00 Sábado das 6:30h às 10:30h</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-unidade">
+                    <img src="" alt="">
+                    <div class="card-info">
+                        <h3>Hemolab - Potengi</h3>
+                        <ul>
+                            <li>Rua Ilhéus, 2706 - Potengi</li>
+                            <li>(84) 3616-5000</li>
+                            <li>Segunda à Sexta das 6:00h ás 16:00 Sábado das 6:30h às 10:30h</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-unidade">
+                    <img src="" alt="">
+                    <div class="card-info">
+                        <h3>Hemolab - São Gonçalo do Amarante</h3>
+                        <ul>
+                            <li>Centro Médico Carajás - Av. Bacharel Tomaz Lardim, SN, São Gonçalo do Amarante - RN</li>
+                            <li>(84) 3616-5000</li>
+                            <li>Segunda à Sexta das 6:00h ás 12:00 Sábado das 6:30h às 10:30h</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-unidade">
+                    <img src="" alt="">
+                    <div class="card-info">
+                        <h3>Hemolab - Praia Shopping</h3>
+                        <ul>
+                            <li>Av. Engenheiro Roberto Freire, 3132 - Capim Macio</li>
+                            <li>(84) 3616-5000</li>
+                            <li>Segunda à Sexta das 6:00h ás 12:00 Sábado das 6:30h às 10:30h</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-unidade">
+                    <img src="" alt="">
+                    <div class="card-info">
+                        <h3>Hemolab - Maria Lacerda</h3>
+                        <ul>
+                            <li>Nordestão - Av. Maria Lacerda Montenegro, 1400 - Nova Parnamirim</li>
+                            <li>(84) 3616-5000</li>
+                            <li>Segunda à Sexta das 6:00h ás 12:00 Sábado das 6:30h às 12:00h</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-unidade">
+                    <img src="" alt="">
+                    <div class="card-info">
+                        <h3>Hemolab - Parnamirim</h3>
+                        <ul>
+                            <li>Av. Prof. Clementino Câmara, 227 - Centro Parnamirim - RN</li>
+                            <li>(84) 3616-5000</li>
+                            <li>Segunda à Sexta das 6:00h ás 16:00 Sábado das 6:30h às 11:30h</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-unidade">
+                    <img src="" alt="">
+                    <div class="card-info">
+                        <h3>Hemolab - Neópolis</h3>
+                        <ul>
+                            <li>R. Divinópolis, 2976 - Neópolis, Natal - RN</li>
+                            <li>(84) 3616-5000</li>
+                            <li>Segunda à Sexta das 6:00h ás 16:00 Sábado das 6:30h às 12:00h</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-unidade">
+                    <img src="" alt="">
+                    <div class="card-info">
+                        <h3>Hemolab - Satélite</h3>
+                        <ul>
+                            <li>Av. dos Xavantes, 1765 - Cidade Satélite, Natal - RN</li>
+                            <li>(84) 3616-5000</li>
+                            <li>Segunda à Sexta das 6:00h ás 16:00 Sábado das 6:30h às 12:00h</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-unidade">
+                    <img src="" alt="">
+                    <div class="card-info">
+                        <h3>Hemolab - Parnamirim II</h3>
+                        <ul>
+                            <li>R. Edgar Dantas, 451 - Santos Reis, Parnamirim - RN</li>
+                            <li>(84) 3616-5000</li>
+                            <li>Segunda à Sexta das 6:00h ás 12:00 Sábado das 6:30h às 10:30h</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rodape-carrossel">
+            <div class="paginacao-dots" id="paginacao-dots"></div>
+            <a href="" class="link-todas-unidades"> Ver todas as unidades →</a>
+        </div>
+    </div>
+</section>
+
+
+<script src="{% static 'js/index.js' %}"></script>
+
 {% endblock %}
