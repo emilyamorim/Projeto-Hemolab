@@ -5,16 +5,18 @@
   <!-- Cabeçalho Superior -->
     <header class="navbar">
         <div class="logo">
-            <img src="{% static 'images/logo-header.png' %}">
+            <a href="{% url 'index' %}">
+                <img src="{% static 'images/logo-header.png' %}">
+            </a>
         </div>
 
         <div class="separador"></div>
 
         <nav class="nav-links">
-            <a href="#home" class="active">Home</a>
-            <a href="#servicos">Serviços</a>
+            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'servicos' %}">Serviços</a>
             <a href="#certificados">Certificados</a>
-            <a href="#unidades">Unidades</a>
+            <a href="{% url 'unidades' %}">Unidades</a>
             <a href="#quem-somos">Quem Somos</a>
         </nav>
         <div class="contato-telefones">
