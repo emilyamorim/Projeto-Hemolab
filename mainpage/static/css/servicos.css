@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+main {
+    font-size: 14px;
+    color: #848e9f;
+    background: #f5f5f5;
+}
+
+.background-text {
+    width: 100%;
+    text-align: center;
+    background-image: url(../images/cinza.png);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 50px 0;
+    position: relative;
+}
+
+.text-block {
+    width: 50%;
+    margin: auto;
+}
+
+.title-servicos {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #0e204d;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.desc-servicos {
+    color: #283b6a;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+p {
+    line-height: 1.75;
+}
+
+.icon-title {
+    position: relative;
+    margin-top: 4em;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid #ffffff;
+    padding: 1em;
+
+
+}
+
+.icon-title-serv {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    align-items: center;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.icon-title img {
+    width: 90px;
+    height: 90px;
+    margin: 1.4em;
+}
+
+.info-exames {
+    background-image: url(../images/servicos.jpg);
+}
+
+.title-exames {
+    width: 30%;
+    margin: auto;
+    padding-top: 1em;
+}
+
+
+.title-exames p {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #435ba1;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.title-exames h1 {
+    font-size: 37px;
+    margin-bottom: 20px;
+    color: #0e204d;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+    padding-bottom: 1em;
+}
+
+.cards-servicos img {
+    width: 90px;
+    height: 90px;
+}
+
+.card-section {
+    display: flex;
+    gap: 2em;
+    width: 70%;
+    margin-left: 16em;
+}
+
+.cards-servicos {
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    align-content: start;
+    text-align: left;
+    padding: 40px;
+    width: 300px;
+
+}
+
+.card-infos h4 {
+    font-size: 24px;
+    margin-bottom: 31px;
+    color: #0e204d;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+
+}
+
+.card-infos li {
+    color: #213360;
+    position: relative;
+    padding-left: 27px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 9px;
+    list-style: none;
+
+}

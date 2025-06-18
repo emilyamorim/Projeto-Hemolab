@@ -1,5 +1,103 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:  'Montserrat', sans-serif;
+    
+}
+body{
+    background-color: #ffffff;
+    
+}
+.corpo{
+    max-width: 1000px;
+    margin-inline: auto;
+    margin-top: 80px;
+    color: #0E204D;
+    
+    
+}
+.corpo h1,p{
+    text-align: center;
+}
+.obs{
+color: #666;
+font-size:x-small;
+}
+.vc{
+    font-size: small;
+}
+.icon-hospital {
+    
+    width: 150px; 
+    height: 150px; 
+
+    
+    border-radius: 50%; 
+    background-color: white; 
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05); 
+
+    
+    position: relative; 
+}
 
 
+
+.icon-hospital img {
+    
+    max-width: 30%; 
+    max-height: 30%; 
+    height: auto; 
+    display: block; 
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.card{
+    width: 325px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+.card-content{
+    padding: 16px;
+}
+
+.card-content h3{
+    font-size:28px;
+    margin-bottom: 8px;
+    color: #00123f;
+}
+
+.card-content p{
+    color: #0E204D;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+
+
+
+
+/*
  h1 {
      font-size: 28px;
      color: #333;
@@ -66,3 +164,5 @@
      background-color: #eee;
      margin: 30px 0;
  }
+ */
+

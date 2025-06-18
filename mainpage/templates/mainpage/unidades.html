@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,62 +11,71 @@
     </style>
 </head>
 {% include 'partials/header.html' %}
+
 <body>
+    {% block content %}
+    <div class="corpo">
+        <div class="icon-hospital">
+            <img src="../../static/images/unidades.png" alt="">
+        </div>
 
-    <!-- Bloco de Conteúdo Principal -->
-    
-        {% block content %}
-       <h1>Unidades</h1>
-    
-    <p><strong>Tem sempre um Hemolab perto de você! O Hemolab conta com unidades completas, com o melhor atendimento, espalhadas por toda Natal e Grande Natal.</strong></p>
-    
-    <p class="obs">OBS: Coletas são realizadas até 1 hora antes do fechamento (Exceto Petrópolis).</p>
-    
-    <hr>
-    
-    <h2>Sempre próximos de você</h2>
-    
-    <h2>Encontre a unidade Hemolab mais próxima</h2>
-    
-    <hr>
-    
-    <div class="unit">
-        <h3>Hemolab - Petrópolis</h3>
-        <ul>
-            <li>Av. Deodoro da Fonseca, 284 - Petrópolis, Natal - RN</li>
-            <li>(84) 3616-5000</li>
-            <li>Segunda à Sexta das 6:00h às 17:00h Sábado das 6:30h às 13:00h</li>
-        </ul>
+        <h1>Unidades</h1> <br>
+        <p>Tem sempre um Hemolab perto de você! O Hemolab
+            conta com unidades completas,<br> com o melhor atendimento,
+            espalhadas por toda Natal e Grande Natal.
+        </p> <br> <br>
+        <div class="obs">
+            <p>OBS: Coletas são realizadas até 1 hora antes do fechamento
+                (Exceto Petrópolis).
+            </p> <br> <br> <br>
+        </div>
+        <div></div>
+        <p>Sempre próximos de você</p> <br>
+        <h1>Encontre a unidade Hemolab mais próxima</h1>
+
     </div>
-    
-    <hr>
-    
-    <div class="unit">
-        <h3>Hemolab - Nascimento de Castro</h3>
-        <ul>
-            <li>Av. Nascimento de Castro, 1909 - Lagoa Nova</li>
-            <li>(84) 3616-5000</li>
-            <li>Segunda à Sexta das 6:00h às 16:00h Sábado das 6:30h às 12:00h</li>
-        </ul>
-    </div>
-    
-    <hr>
-    
-    <div class="unit">
-        <h3>Hemolab - Miguel Castro</h3>
-        <ul>
-            <li>Av. Miguel Castro, 1137, Lagoa Nova</li>
-            <li>(84) 3616-5000</li>
-            <li>Segunda à Sexta das 6:00h às 12:00h Sábado das 6:30h às 10:30h</li>
-        </ul>
-    </div>
-    
-    <hr>
-    
-    <p class="services">O Hemolab, dispõe de serviços de diagnose nas mais diversas áreas como biologia molecular, hematologia, imuno-hematologia, citometria de fluxo, bioquímica, imunologia, horméutica, urinálicas, parasitologia, microbiologia, mitologia, análises clínicas com recursos e equipamentos de ponta.</p>
-        {% endblock %}
+    <div class="card-container">
+        <div class="card">
+            <img src="../../static/images/Petropolis.png" alt="">
+            <div class="card-content">
+                <h3>Hemolab - Petrópolis</h3>
+                <ul>
+                    <li>Av. Deodoro da Fonseca, 284 - Petrópolis, Natal - RN</li>
+                    <li>(84) 3616-5000</li>
+                    <li>Segunda à Sexta das 6:00h às 17:00h Sábado das 6:30h às 13:00h</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../../static/images/nascimento-de-castro.png" alt="">
+            <div class="card-content">
+                <h3>Hemolab - Nascimento de Castro</h3>
+                <ul>
+                    <li>Av. Deodoro da Fonseca, 284 - Petrópolis, Natal - RN</li>
+                    <li>(84) 3616-5000</li>
+                    <li>Segunda à Sexta das 6:00h às 17:00h Sábado das 6:30h às 13:00h</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../../static/images/miguelcastro.png" alt="">
+            <div class="card-content">
+                <h3>Hemolab -Miguel Castro</h3>
+                <ul>
+                    <li>Av. Deodoro da Fonseca, 284 - Petrópolis, Natal - RN</li>
+                    <li>(84) 3616-5000</li>
+                    <li>Segunda à Sexta das 6:00h às 17:00h Sábado das 6:30h às 13:00h</li>
+                </ul>
+            </div>
+        </div>
 
 
-{% include 'partials/footer.html' %}
+    </div>
+    {% endblock %}
+
+    {% include 'partials/footer.html' %}
 </body>
+
 </html>
